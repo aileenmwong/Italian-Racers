@@ -17,22 +17,19 @@
 .racer {
   width: 150px;
   height: 150px;
+  font-family: 'Bowlby One SC', cursive;
+  font-size: 24px;
+  text-align: center;
 }
 
 #red {
   background-color: red;
   position: absolute;
-  font-family: 'Bowlby One SC', cursive;
-  font-size: 24px;
-  text-align: center;
 }
 
 #blue {
   background-color: blue;
   position: absolute;
-  font-family: 'Bowlby One SC', cursive;
-  font-size: 24px;
-  text-align: center;
 }
 
 #result {
