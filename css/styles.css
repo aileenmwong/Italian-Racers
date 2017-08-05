@@ -25,11 +25,20 @@
 
 #red {
   background-color: red;
-
+  background-image: url("../assets/peach.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  max-width: 100%;
 }
 
 #blue {
   background-color: blue;
+  background-image: url("../assets/yoshi.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  max-width: 100%;
 }
 
 #result {

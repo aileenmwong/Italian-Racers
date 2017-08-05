@@ -17,33 +17,36 @@ window.onload = function() {
     // console.log($els.redCar)
     // console.log($els.blueCar)
     // console.log(move);
-     console.log($els.redCar.style.left)
+    // console.log($els.redCar.style.left)
 
     //if keyCode 90(z key) is pressed, move the red car 5px
     if (move.keyCode === 90){
-      rPosition += 5;
+      rPosition += 10;
       //console.log(rPosition)
       $els.redCar.style.left = rPosition + 'px';
       }
     //if keyCode 39(right arrow key) is pressed, move the blue car 5px
     if (move.keyCode === 39){
-      bPosition += 5;
+      bPosition += 10;
       $els.blueCar.style.left = bPosition + 'px';
     }
     getWinner();
+
   }
 
     //if one car gets to the end position, that car is the winner
   function getWinner() {
-    if ($els.redCar.style.left === '445px'){
+    if ($els.redCar.style.left === '450px'){
       document.querySelector('#result').innerHTML = 'Red Car is the Winner!';
-      //remove event listener
+      //document.removeEventListener('onkeydown', animate);
     }
-    else if ($els.blueCar.style.left === '445px'){
+    else if ($els.blueCar.style.left === '450px'){
       document.querySelector('#result').innerHTML = 'Blue Car is the Winner!';
+      //document.removeEventListener('onkeydown', animate);
     }
-  }
 
+
+  }
 
   //grab the start button
   let startButton = document.querySelector('#beginGame');
@@ -52,7 +55,7 @@ window.onload = function() {
 
   //initialize the cars put click event on button, inititalize function animate
   function start() {
-  //
+  // When user presses a key down, begin moving car
     document.onkeydown = animate;
   };
 
