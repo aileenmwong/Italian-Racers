@@ -1,0 +1,57 @@
+#startButton {
+  text-align: center;
+  margin: 20px;
+}
+
+.racetrack {
+  border: 1px solid black;
+  width: 600px;
+  height: 400px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  justify-content: space-around;
+}
+
+.racer {
+  width: 150px;
+  height: 150px;
+}
+
+#red {
+  background-color: red;
+  position: absolute;
+  font-family: 'Bowlby One SC', cursive;
+  font-size: 24px;
+  text-align: center;
+}
+
+#blue {
+  background-color: blue;
+  position: absolute;
+  font-family: 'Bowlby One SC', cursive;
+  font-size: 24px;
+  text-align: center;
+}
+
+#result {
+  margin: auto;
+  font-family: 'Bowlby One SC', cursive;
+  font-size: 24px;
+  border: 1px solid black;
+  width: 600px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  width: 200px;
+  height: 30px;
+  font-weight: 800;
+
+}
+
+
