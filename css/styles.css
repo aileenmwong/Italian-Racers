@@ -12,6 +12,7 @@
   flex-direction: column;
   margin: auto;
   justify-content: space-around;
+  background-image: url("../assets/racetrack3.jpg");
 }
 
 .racer {
@@ -24,7 +25,7 @@
 }
 
 #red {
-  background-color: red;
+  /*background-color: red;*/
   background-image: url("../assets/peach.png");
   background-size: contain;
   background-repeat: no-repeat;
@@ -33,7 +34,7 @@
 }
 
 #blue {
-  background-color: blue;
+  /*background-color: blue;*/
   background-image: url("../assets/yoshi.png");
   background-size: contain;
   background-repeat: no-repeat;

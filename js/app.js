@@ -37,11 +37,11 @@ window.onload = function() {
     //if one car gets to the end position, that car is the winner
   function getWinner() {
     if ($els.redCar.style.left === '450px'){
-      document.querySelector('#result').innerHTML = 'Red Car is the Winner!';
+      document.querySelector('#result').innerHTML = 'Peach is the Winner!';
       //document.removeEventListener('onkeydown', animate);
     }
     else if ($els.blueCar.style.left === '450px'){
-      document.querySelector('#result').innerHTML = 'Blue Car is the Winner!';
+      document.querySelector('#result').innerHTML = 'Yoshi is the Winner!';
       //document.removeEventListener('onkeydown', animate);
     }
 
