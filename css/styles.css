@@ -1,4 +1,4 @@
-#startButton {
+#buttons {
   text-align: center;
   margin: 20px;
 }
@@ -20,16 +20,16 @@
   font-family: 'Bowlby One SC', cursive;
   font-size: 24px;
   text-align: center;
+  position: relative;
 }
 
 #red {
   background-color: red;
-  position: absolute;
+
 }
 
 #blue {
   background-color: blue;
-  position: absolute;
 }
 
 #result {
@@ -44,11 +44,16 @@
   align-items: center;
 }
 
-button {
+#beginGame {
   width: 200px;
   height: 30px;
   font-weight: 800;
+}
 
+#resetGame {
+  width: 100px;
+  height: 30px;
+  font-weight: 800;
 }
 
 
