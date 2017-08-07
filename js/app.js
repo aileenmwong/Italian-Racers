@@ -1,3 +1,5 @@
+//worked with Sarah, Zarrina, Chris and TA on Saturday on homework
+
 window.onload = function() {
   console.log('Racers Ready!');
 
