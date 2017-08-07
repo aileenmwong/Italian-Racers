@@ -7,7 +7,7 @@ window.onload = function() {
     blueCar: document.querySelector('#blue'),
     racetrack: document.querySelector('.racetrack')
   }
-
+  //start both cars are 0
   let rPosition = 0;
   let bPosition = 0;
 
@@ -19,17 +19,19 @@ window.onload = function() {
     // console.log(move);
     // console.log($els.redCar.style.left)
 
-    //if keyCode 90(z key) is pressed, move the red car 5px
+    //if keyCode 90(z key) is pressed, move the red car 10px
     if (move.keyCode === 90){
       rPosition += 10;
-      //console.log(rPosition)
+      //make sure the position is in px
       $els.redCar.style.left = rPosition + 'px';
       }
-    //if keyCode 39(right arrow key) is pressed, move the blue car 5px
+    //if keyCode 39(right arrow key) is pressed, move the blue car 10px
     if (move.keyCode === 39){
       bPosition += 10;
+      //make sure the position is in px
       $els.blueCar.style.left = bPosition + 'px';
     }
+    //run get winner after animation
     getWinner();
 
   }
@@ -37,10 +39,12 @@ window.onload = function() {
     //if one car gets to the end position, that car is the winner
   function getWinner() {
     if ($els.redCar.style.left === '450px'){
+      //winner is printed in the the result box
       document.querySelector('#result').innerHTML = 'Peach is the Winner!';
       //document.removeEventListener('onkeydown', animate);
     }
     else if ($els.blueCar.style.left === '450px'){
+      //winner is printed in the the result box
       document.querySelector('#result').innerHTML = 'Yoshi is the Winner!';
       //document.removeEventListener('onkeydown', animate);
     }
@@ -55,7 +59,7 @@ window.onload = function() {
 
   //initialize the cars put click event on button, inititalize function animate
   function start() {
-  // When user presses a key down, begin moving car
+  // When user presses a key down, call function to animate car
     document.onkeydown = animate;
   };
 
