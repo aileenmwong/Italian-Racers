@@ -1,4 +1,4 @@
-//worked with Sarah, Zarrina, Chris and TA on Saturday on homework
+  //worked with Sarah, Zarrina, Chris and TA on Saturday on homework
 
 window.onload = function() {
   console.log('Racers Ready!');
@@ -9,6 +9,9 @@ window.onload = function() {
     blueCar: document.querySelector('#blue'),
     racetrack: document.querySelector('.racetrack')
   }
+
+  document.addEventListener('keydown', animate);
+
   //start both cars are 0
   let rPosition = 0;
   let bPosition = 0;
@@ -43,16 +46,18 @@ window.onload = function() {
     if ($els.redCar.style.left === '450px'){
       //winner is printed in the the result box
       document.querySelector('#result').innerHTML = 'Peach is the Winner!';
-      //document.removeEventListener('onkeydown', animate);
+      document.removeEventListener('keyup', animate);
     }
     else if ($els.blueCar.style.left === '450px'){
       //winner is printed in the the result box
       document.querySelector('#result').innerHTML = 'Yoshi is the Winner!';
-      //document.removeEventListener('onkeydown', animate);
+      document.removeEventListener('keyup', animate);
     }
 
 
   }
+
+
 
   //grab the start button
   let startButton = document.querySelector('#beginGame');
@@ -62,7 +67,7 @@ window.onload = function() {
   //initialize the cars put click event on button, inititalize function animate
   function start() {
   // When user presses a key down, call function to animate car
-    document.onkeydown = animate;
+    document.addEventListener('onkeydown', animate);
   };
 
 
